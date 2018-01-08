@@ -1,0 +1,13 @@
+*.class
+target/
+
+# IDEA metadata and output dirs
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# gitbook
+_book
+tmp
+.springBeans
