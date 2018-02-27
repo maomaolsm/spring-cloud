@@ -1,0 +1,25 @@
+server:
+  port: 8010
+
+spring:
+  application:
+    name: microservice-consumer-movie-ribbon-customizing-properties
+
+eureka:
+  client:
+    serviceUrl:
+      drfaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+
+info:
+  app:
+    name: name
+    encoding: encoding
+    java:
+      source: source
+      target: target
+
+microservice-consumer-user:
+  ribbon:
+    NFLoadBalanceRuleClassName: con.netflix.loadbalancer.RandomRule
